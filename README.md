@@ -67,6 +67,7 @@ Function 8:0.000000-0.399074-0.123214-0.112487-0.679719-0.634021-0.180101-0.8013
 The outputs are generated based on the user inputs and are provided soon after  inputs are submitted. Example from a different week provided below.
 
 **Output Examples**
+
 Function 1:
 0.000021365074638137203
 
