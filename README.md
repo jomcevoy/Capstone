@@ -49,12 +49,19 @@ The inputs to each function are continuous numeric values that lie within the ra
 Functions
 **Input Examples**
 Function 1:0.616162-0.646465
+
 Function 2:0.000000-0.400000
+
 Function 3:0.813402-1.000000-0.850601
+
 Function 4:0.435949-0.443948-0.243355-0.439113
+
 Function 5:0.476092-0.995411-1.000000-1.000000
+
 Function 6:0.892895-0.772634-0.937451-0.406290-0.360158
+
 Function 7:0.000000-0.267792-0.069571-0.000000-0.227411-0.803541
+
 Function 8:0.000000-0.399074-0.123214-0.112487-0.679719-0.634021-0.180101-0.801376
 
 The outputs are generated based on the user inputs and are provided soon after  inputs are submitted. Example from a different week provided below.
