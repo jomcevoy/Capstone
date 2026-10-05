@@ -134,4 +134,4 @@ Function 7 (Hypertune) and Function 8 (BBO) : have significant sparsity and rand
 
  **Configuration Documents**
  * **Data Sheet**: [DataSheet](Data/Configs/DataSheet.md)
- * **Model Card**: [Model_Card](Data/Configs/Model_Card.md)
+ * **Model Card**: [Model_Card](Data/Configs/Model_card.md)
