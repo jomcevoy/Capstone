@@ -133,4 +133,4 @@ Function 5 (Chemical) & Function 6 (Cake) : both these functions have two domina
 Function 7 (Hypertune) and Function 8 (BBO) : have significant sparsity and random exploration may yield little results. Focus will be on finding specific ML methods for this level of sparsity.
 
  **Configuration Documents**
- **Data Sheet** [Data/Configs](DataSheet.md)
+ * **Data Sheet**: [Data/Configs](DataSheet.md)
