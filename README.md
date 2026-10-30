@@ -88,6 +88,9 @@ Function 8:
 
 Section 3 - Challenge objectives
 
+
+**Section 3 - Challenge objectives**
+
 ⊚ Capstone Callenge
 
 This capstone challenge mimics a Bayesian optimisation-style competition, in which the objective is to find the maximum of eight unknown functions, also known as black-box functions. There is no insight into the equations or visuals of these functions up front – just some initial data and the ability to make smart guesses.
@@ -125,3 +128,6 @@ Function 5 (Chemical) & Function 6 (Cake) : both these functions have two domina
 Function 7 (Hypertune) and Function 8 (BBO) : have significant sparsity and random exploration may yield little results. Focus will be on finding specific ML methods for this level of sparsity.
 
  Reply Reply to Comment
+ **Configuration Documents**
+ * **Data Sheet**: [DataSheet](Data/Configs/DataSheet.md)
+ * **Model Card**: [Model_Card](Data/Configs/Model_card.md)
