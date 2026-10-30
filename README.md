@@ -1,16 +1,16 @@
 # Capstone
 
-**Section 1: Project Overview**
+### Section 1: Project Overview
 
-**◼. Black Box Optimisation**
+#### ◼. Black Box Optimisation
 
 This repository houses the Black-Box Optimisation (BBO) Capstone Project. The purpose of this project is to develop, benchmark, and deploy sample-efficient optimisation frameworks designed for complex, real-world systems.In many advanced engineering and scientific applications, the underlying system behaves as a "black box": we can observe its outputs for given inputs, but we do not possess an analytical mathematical formula to describe its inner workings. Furthermore, these systems lack gradient information, are highly non-linear, contain noisy outputs, and are incredibly resource-intensive or expensive to evaluate. This project provides a systematic, algorithmic alternative to inefficient manual tuning and brute-force searching.
 
-**⟁ . Goal of the Capstone Project**
+#### ⟁ . Goal of the Capstone Project
 
 The primary objective of this project is to locate the global optimum (maximum or minimum) of an expensive black-box function using the absolute minimum number of system evaluations. To achieve this, the project focuses on designing an automated pipeline that balances exploration (gathering data in uncharted regions of the parameter space to reduce uncertainty) and exploitation (honing in on known high-performing regions to locate the peak). The ultimate benchmark of success is achieving a state-of-the-art objective score while drastically minimizing the computational or financial overhead.
 
-**Real World Applications** - in the real world, engineers rarely work with clean, differentiable functions and BBO is a mechanism that bridges advanced statistical theory with high-impact industry applications such as..
+#### Real World Applications - in the real world, engineers rarely work with clean, differentiable functions and BBO is a mechanism that bridges advanced statistical theory with high-impact industry applications such as..
 
 Hyperparameter tuning in NL Models
 Drug discovery
@@ -18,7 +18,7 @@ Recommendation systems
 Reinforcement Learning (AI agents, robotics).
  
 
-**⟳ Principle of Black Box Optimisation**
+#### ⟳ Principle of Black Box Optimisation
 
 Instead of guessing randomly or evaluating a rigid, wasteful grid of points, BBO implements an iterative feedback loop driven by data-driven probability. The system relies on two core components.
 
@@ -26,7 +26,7 @@ A surrogate model that constructs a probabilistic approximation of the true obje
 An acquisition function that uses the surrogate model’s predictions and uncertainty metrics to calculate a "utility score" across the entire search space, pinpointing where the next system evaluation should take place.
  
 
-**⟐ . Capstone project supports my current or future career**
+#### ⟐ . Capstone project supports my current or future career
 
 For a Commercial Finance Director, a Black-Box Optimisation (BBO) framework is the ultimate decision-support engine, and will become a powerful tool as businesses become more complex and competitive.
 
@@ -34,13 +34,13 @@ In corporate finance, you constantly face "black-box" problems: complex business
 
  
 
-**Section 2: Inputs and Outputs**
+### Section 2: Inputs and Outputs
 
-**⟤.⟥ State the model’s interface**
+#### ⟤.⟥ State the model’s interface
 
 The pipeline connects to the black-box engine using a input-output application . For each of the eight projects, the machine learning system has an initial sample set of inputs and outputs and application provides the subsequent inputs provided and outputs are feedback through personalised emails.
 
-**⟢. What are the inputs and outputs**
+#### ⟢. What are the inputs and outputs
 
 There are eight BBO functions that have between 2 and 8 features. 
 
@@ -67,54 +67,46 @@ Function 8:0.000000-0.399074-0.123214-0.112487-0.679719-0.634021-0.180101-0.8013
 The outputs are generated based on the user inputs and are provided soon after  inputs are submitted. Example from a different week provided below.
 
 **Output Examples**
-
-Function 1:
-0.000021365074638137203
-
-Function 2:
--0.04250067518679212
-
-Function 3:
--0.17955537260329268
-
-Function 4:
-0.5481902259003815
-
-Function 5:
-2998.5110568875957
-
-Function 6:
--1.2679820129946602
-
-Function 7:
-1.3627627244158926
-
-Function 8:
-8.7983052999894
+| Function | Output |
+| --- | --- |
+| Function 1 | 0.000021365074638137203 |
+| Function 2 | -0.04250067518679212 |
+| Function 3 | -0.17955537260329268 |
+| Function 4 | 0.5481902259003815 |
+| Function 5 | 2998.5110568875957 |
+| Function 6 | -1.2679820129946602 |
+| Function 7 | 1.3627627244158926 | 
+| Function 8 | 8.7983052999894 |
 
 
 
-**Section 3 - Challenge objectives**
+### Section 3 - Challenge objectives
 
-⊚ Capstone Callenge
+#### ⊚ Capstone Challenge
 
-This capstone challenge mimics a Bayesian optimisation-style competition, in which the objective is to find the maximum of eight unknown functions, also known as black-box functions. There is no insight into the equations or visuals of these functions up front – just some initial data and the ability to make smart guesses.
+This Black Box Optimisation (BBO) Capstone project (a course or project undertaken by a student as a culmination of work towards a diploma/certificate) is an effective way to develop and test students' practical understanding of the course material. The project mimics a Bayesian optimisation-style competition, in which we are trying to discover the maximum of eight unknown functions, also known as black-box functions. There are no equations or visuals of these functions up front – just some initial data and the ability to make smart guesses.
 
-Each function simulates a real-world task such as radiation detection, robot control or drug discovery, where evaluations are expensive or limited. The goal is to find the inputs that give the highest possible output for each function. Every function has been constructed as a maximisation problem (if the real life problem was a minimisation problem then the features have been applied as negatives.)
+Each function simulates a real-world task such as radiation detection, robot control or drug discovery, where evaluations are expensive or limited. The project provides an opportunity to apply the various ML tools from the course and intelligent search strategies in a realistic ML challenge. Perfect solutions were not expected, but rather encouraged to demonstrate a sound experimental process throughout the capstone project, and an introduction to supporting documentation (datasheets, modelcards) as well the wonders of git. The core algorithm used for this project was Bayesian Optimisation utilising a surrogate model. This has proved a powerful technique in its own right but is also clearly an important tool for the tuning of the multi-dimensional hyperparameters found in large language models (LLM), 
 
-The challenge lasts 13 weeks; this reflects the constraints where evaluations are expensive and data may be limited,
+The overarching objective was - Solving black box maximisation problems. Finding the input combinations that maximises the output, using a limited set of queries and an initial training data set. Coming from a maths/finance background I default to trying to understand the data, and so for each function I calculated feature correlations (how each feature individually relates to the output score), mutual information (the extent to which features overlap information) and importance score (how much weight, influence, or predictive power a specific feature has within the function). From these results, in most cases I was able to represent each function in 2 key dimensions so that I could visualise them.
+
 
  
 
-Section 4 - Technical approach
+### Section 4 - Technical approach
 
-⫸ Core Strategy
+#### ⫸ Core Strategy
 
 The core strategy treats the challenge as a sequential decision-making problem under uncertainty, using Bayesian Optimisation as an efficient way to find the global optimum (maximum or minimum) of an expensive-to-evaluate, black-box function. 
 
-The Initial Strategies (Queries 1-3)
+The overall strategy was to break the exercise into three phases; Because we already possess the initial data sets, we can immediately construct a surrogate model (Gaussian Process) to create a probability distribution (mean and variance) over the possible functions, providing a prediction; and how confident it is about that prediction.
 
-Prior to submitting any user queries a detailed review of the initial sample data and outputs were analysed to understand the relative importance of features and to where possible review visually the initial output values.
+Phase 1 - Exploration (Queries 1-4) - in the exploration phase we encourage the algorithm to target critical blind spots—especially large unmapped gaps sitting right next to high-performing historical data points. Spending any more query budget on exploration, (particularly in the high dimensional functions) would likely be unproductive.
+
+Phase 2 - Trade Offs  (Queries 5-10) - in the trade off phase we encourage the algorithm to use the dimensional statistics we continue to calculate along with its historic results through an acquisition function; to balance exploring areas where the variation is high with filling in the gaps with the highest scoring zones. In this phase the search space bounds (where it can search) and the search length scales  (how big its moves are) are actively tightened based on our ongoing dimensional statistics.
+
+Phase 3 - Deep Exploitation  (Queries 11-13) - in the final phase we encourage the algorithm to ignore anything but the highest performing regions and to change input parameters by tiny increments to to pinpoint the exact peak of the underlying function.
+
 
 There is more of an emphasis on Exploration in the initial queries; for UCB queries this means increasing the multiplier (kappa) of the standard deviation to give more weight to areas of higher variance, and for EI queries increasing the margin of performance threshold xi. 
 
@@ -135,3 +127,20 @@ Function 7 (Hypertune) and Function 8 (BBO) : have significant sparsity and rand
  **Configuration Documents**
  * **Data Sheet**: [DataSheet](Data/Configs/DataSheet.md)
  * **Model Card**: [Model_Card](Data/Configs/Model_card.md)
+
+  **Supporting Documents**
+ * **Week 1**: [12](Data/Subs/12.md)
+ * **Week 2**: [13](Data/Subs/13.md)
+ * **Week 3**: [14](Data/Subs/14.md)
+ * **Week 4**: [15](Data/Subs/15.md)
+ * **Week 5**: [16](Data/Subs/16.md)
+ * **Week 6**: [17](Data/Subs/17.md)
+ * **Week 7**: [18](Data/Subs/18.md)
+ * **Week 8**: [19](Data/Subs/19.md)
+ * **Week 9**: [20](Data/Subs/20.md)
+ * **Week 10**: [15](Data/Subs/21.md)
+ * **Week 11**: [16](Data/Subs/22.md)
+ * **Week 12**: [15](Data/Subs/23.md)
+ * **Week 13**: [16](Data/Subs/24.md)
+ * **Week 14a**: [Retrospective](Data/Subs/25.md)
+ * **Week 14b**: [Successful Strategies](Data/Subs/25(2).md)
